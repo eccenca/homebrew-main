@@ -2,7 +2,7 @@ class Cmemc < Formula
   desc "The eccenca Corporate Memory Command-Line Interface (CLI)"
   homepage "https://eccenca.com/go/cmemc"
   url "https://releases.eccenca.com/cmemc/cmemc-v20.06.tgz"
-  sha256 "9390f0c41cb647055fe57421b27fd3948273c997f6e3f834b130cf5ec5842799"
+  sha256 "985d7afa8e48df1b91b02a57852e2a16ac1e384f907faec4cb941ecd1b3dc2e6"
 
   def install
     rm "cmemc"
