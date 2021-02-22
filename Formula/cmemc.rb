@@ -1,20 +1,19 @@
 class Cmemc < Formula
+  include Language::Python::Virtualenv
+
   desc "The eccenca Corporate Memory Command-Line Interface (CLI)"
   homepage "https://eccenca.com/go/cmemc"
-  url "https://releases.eccenca.com/cmemc/cmemc-v20.12.tgz"
-  sha256 "8dc448658da46e7bbc29817844b4da78b276b35033012b79ceb896ae180a9543"
+  url "https://files.pythonhosted.org/packages/0d/c5/cffc492578798cc80f9e34f779a9c707963aa92b2df87c70a8b19e7fe98f/cmem_cmemc-21.2.tar.gz"
+  sha256 "883f748a887a0540f3174efdaed11c22a3f5f41c0b6b623ef12b418b30cfa2a1"
+  license "Apache-2.0"
+  version "21.2"
 
+  depends_on "python"
+  depends_on "python3"
   def install
-    rm "cmemc"
-    rm "cmemc.exe"
-    rm "cmemc-rhel"
-    rm Dir["*.pdf"]
-    libexec.install Dir["*"]
-    bin.install_symlink "#{libexec}/cmemc-macosx" => "cmemc"
-  end
-
-  test do
-    # no tests atm
-    system "true"
+    venv = virtualenv_create(libexec, "python3")
+    venv.pip_install resources
+    venv.pip_install_and_link buildpath
   end
 end
+
