@@ -1,12 +1,14 @@
 class Cmemc < Formula
   include Language::Python::Virtualenv
 
-  desc "The eccenca Corporate Memory Command-Line Interface (CLI)"
+  desc "Command-Line Interface (CLI) for eccenca Corporate Memory"
   homepage "https://eccenca.com/go/cmemc"
   url "https://files.pythonhosted.org/packages/b3/18/614d01a05c1069a6fbeea9c05ea502283cd460a16d90a6deeb3eb6198915/cmem_cmemc-21.2.3.tar.gz"
+  version "21.2.1"
   sha256 "c966c0dfab7a0ad84a548d0a2ae3f8268a484c57d1bbf3306bf03a129eae5b8a"
   license "Apache-2.0"
-  version "21.2.1"
+
+  depends_on "python@3.7"
 
   resource "cmem-cmempy" do
     url "https://files.pythonhosted.org/packages/c5/38/0d3734c56f4dd2ea4ea304bf8792b79705d5c6cf39eb6e41a7fd9c4c326d/cmem_cmempy-21.2.3.tar.gz"
@@ -118,9 +120,7 @@ class Cmemc < Formula
     sha256 "29872e92839765e546828bb7754a68c418d927cd064fd4708fab9fe9c8bb116b"
   end
 
-  depends_on "python@3.7"
   def install
     virtualenv_install_with_resources
   end
 end
-
