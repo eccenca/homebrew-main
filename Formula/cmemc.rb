@@ -3,16 +3,14 @@ class Cmemc < Formula
 
   desc "The eccenca Corporate Memory Command-Line Interface (CLI)"
   homepage "https://eccenca.com/go/cmemc"
-  # TODO: After publishing 21.02.1 on pypi change the link from test pypi to pypi
-  url "https://test-files.pythonhosted.org/packages/c8/20/8db9da531e7fd54894c14dc28b2b16d54bbe609bd63fcbef89930cca9c8a/cmem_cmemc-21.2.1.tar.gz"
-  sha256 "8f1e953fcb6dc2f828d42367646682fa2e398d7b85555efe197139278087c06b"
+  url "https://files.pythonhosted.org/packages/b3/18/614d01a05c1069a6fbeea9c05ea502283cd460a16d90a6deeb3eb6198915/cmem_cmemc-21.2.3.tar.gz"
+  sha256 "c966c0dfab7a0ad84a548d0a2ae3f8268a484c57d1bbf3306bf03a129eae5b8a"
   license "Apache-2.0"
   version "21.2.1"
 
-  # TODO: After publishing 21.02.1 on pypi change the link from test pypi to pypi
   resource "cmem-cmempy" do
-    url "https://test-files.pythonhosted.org/packages/8b/6b/b157b421c47bc951bbdc8fde31225fc51a76ea52eca58474f80b3ed4a5eb/cmem_cmempy-21.2.1.tar.gz"
-    sha256 "89226033575a343a372ff88015ea08b361cb6a4ffccb228bb0b4b2f1ccd81e19"
+    url "https://files.pythonhosted.org/packages/c5/38/0d3734c56f4dd2ea4ea304bf8792b79705d5c6cf39eb6e41a7fd9c4c326d/cmem_cmempy-21.2.3.tar.gz"
+    sha256 "81c7f07291d4287a828db14bdc68a54497ada8ba19cac87048432a310df818aa"
   end
 
   resource "certifi" do
@@ -120,7 +118,7 @@ class Cmemc < Formula
     sha256 "29872e92839765e546828bb7754a68c418d927cd064fd4708fab9fe9c8bb116b"
   end
 
-  depends_on "python3"
+  depends_on "python@3.7"
   def install
     virtualenv_install_with_resources
   end
