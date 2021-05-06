@@ -3,16 +3,16 @@ class Cmemc < Formula
 
   desc "Command-Line Interface (CLI) for eccenca Corporate Memory"
   homepage "https://eccenca.com/go/cmemc"
-  url "https://files.pythonhosted.org/packages/b3/18/614d01a05c1069a6fbeea9c05ea502283cd460a16d90a6deeb3eb6198915/cmem_cmemc-21.2.3.tar.gz"
-  version "21.2.1"
-  sha256 "c966c0dfab7a0ad84a548d0a2ae3f8268a484c57d1bbf3306bf03a129eae5b8a"
+  url "https://files.pythonhosted.org/packages/15/98/0428cd237d311c94650b648a22742d0e9d45ae2de2082fde8b2f9a90081a/cmem_cmemc-21.4.tar.gz"
+  version "21.4"
+  sha256 "7ea511949e4c9a59af7b14c3d9590e426e99ffa86af8091c3969a0b616cfb88c"
   license "Apache-2.0"
 
   depends_on "python@3.7"
 
   resource "cmem-cmempy" do
-    url "https://files.pythonhosted.org/packages/c5/38/0d3734c56f4dd2ea4ea304bf8792b79705d5c6cf39eb6e41a7fd9c4c326d/cmem_cmempy-21.2.3.tar.gz"
-    sha256 "81c7f07291d4287a828db14bdc68a54497ada8ba19cac87048432a310df818aa"
+    url "https://files.pythonhosted.org/packages/cd/a3/ca5177e27111fbd2a729206ae23fb6ec2cac4b021b2992495bea49d0d624/cmem_cmempy-21.4.tar.gz"
+    sha256 "f0c7cde1df7bca5bce3bcdd8a5e9b96c2637fa408aa99188b814162644d9ca5c"
   end
 
   resource "certifi" do
@@ -51,8 +51,8 @@ class Cmemc < Formula
   end
 
   resource "Pygments" do
-    url "https://files.pythonhosted.org/packages/19/d0/dec5604a275b19b0ebd2b9c43730ce39549c8cd8602043eaf40c541a7256/Pygments-2.8.0.tar.gz"
-    sha256 "37a13ba168a02ac54cc5891a42b1caec333e59b66addb7fa633ea8a6d73445c0"
+    url "https://files.pythonhosted.org/packages/ba/6e/7a7c13c21d8a4a7f82ccbfe257a045890d4dbf18c023f985f565f97393e3/Pygments-2.9.0.tar.gz"
+    sha256 "a18f47b506a429f6f4b9df81bb02beab9ca21d0a5fee38ed15aef65f0545519f"
   end
 
   resource "requests" do
@@ -76,23 +76,23 @@ class Cmemc < Formula
   end
 
   resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/d7/8d/7ee68c6b48e1ec8d41198f694ecdc15f7596356f2ff8e6b1420300cf5db3/urllib3-1.26.3.tar.gz"
-    sha256 "de3eedaad74a2683334e282005cd8d7f22f4d55fa690a2a1020a416cb0a47e73"
+    url "https://files.pythonhosted.org/packages/cb/cf/871177f1fc795c6c10787bc0e1f27bb6cf7b81dbde399fd35860472cecbc/urllib3-1.26.4.tar.gz"
+    sha256 "e7b021f7241115872f92f43c6508082facffbd1c048e3c6e2bb9c2a157e28937"
   end
 
   resource "six" do
-    url "https://files.pythonhosted.org/packages/6b/34/415834bfdafca3c5f451532e8a8d9ba89a21c9743a0c59fbd0205c7f9426/six-1.15.0.tar.gz"
-    sha256 "30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259"
+    url "https://files.pythonhosted.org/packages/71/39/171f1c67cd00715f190ba0b100d606d440a28c93c7714febeca8b79af85e/six-1.16.0.tar.gz"
+    sha256 "1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"
   end
 
   resource "chardet" do
-    url "https://files.pythonhosted.org/packages/fc/bb/a5768c230f9ddb03acc9ef3f0d4a3cf93462473795d18e9535498c8f929d/chardet-3.0.4.tar.gz"
-    sha256 "84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae"
+    url "https://files.pythonhosted.org/packages/ee/2d/9cdc2b527e127b4c9db64b86647d567985940ac3698eeabc7ffaccb4ea61/chardet-4.0.0.tar.gz"
+    sha256 "0d6f53a15db4120f2b08c94f11e7d93d2c911ee118b6b30a04ec3ee8310179fa"
   end
 
   resource "idna" do
-    url "https://files.pythonhosted.org/packages/ea/b7/e0e3c1c467636186c39925827be42f16fee389dc404ac29e930e9136be70/idna-2.10.tar.gz"
-    sha256 "b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6"
+    url "https://files.pythonhosted.org/packages/9f/24/1444ee2c9aee531783c031072a273182109c6800320868ab87675d147a05/idna-3.1.tar.gz"
+    sha256 "c5b02147e01ea9920e6b0a3f1f7bb833612d507592c837a6c49552768f4054e1"
   end
 
   resource "pyparsing" do
